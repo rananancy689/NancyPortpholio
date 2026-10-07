@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Nancy Rana portfolio — developer, UI designer, and front-end specialist." />
+    <title>Nancy Rana | Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Space+Mono:wght@400;700&family=Work+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <aside class="sidebar">
+        <div class="brand-wrap">
+          <a class="brand-mark" href="#home" aria-label="Nancy Rana home">NR</a>
+        </div>
+
+        <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch to dark theme" aria-pressed="false" title="Switch to dark theme">
+          <svg class="theme-icon theme-icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.7"/></svg>
+          <svg class="theme-icon theme-icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.2 15.4A8.7 8.7 0 0 1 8.6 3.8 8.8 8.8 0 1 0 20.2 15.4Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"/></svg>
+        </button>
+
+        <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="mainNavigation">
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav class="main-nav" id="mainNavigation" aria-label="Main navigation">
+          <a href="#home">Works</a>
+          <a href="#about">About</a>
+          <a href="assets/NancyRana.pdf" target="_blank" rel="noopener noreferrer">Résumé</a>
+          <a href="#contact">Get in touch</a>
+        </nav>
+
+        <div class="sidebar-card">
+          <span class="eyebrow">Currently</span>
+          <h3>Available for work</h3>
+          <p>Open to full-stack development opportunities involving .NET, ASP.NET Core, Web APIs, Angular, and enterprise product delivery across India and remote roles.</p>
+        </div>
+
+      </aside>
+
+      <main class="content">
+        <section id="home" class="hero section">
+          <div class="hero-copy">
+            <p class="eyebrow accent">Hello there <span aria-hidden="true">👋</span></p>
+            <h1>
+              I’m <span class="hero-name">Nancy Rana</span>, a full-stack developer building enterprise-grade applications with .NET, APIs, and modern web technologies.
+            </h1>
+          </div>
+          <div class="hero-bottom-actions">
+            <a class="scroll-cue" href="#projects" aria-label="Scroll to Selected Works">
+              <span class="scroll-cue-label">Selected Works</span>
+              <span class="scroll-cue-arrow" aria-hidden="true">&#8595;</span>
+            </a>
+            <aside class="assistant-widget" aria-label="Portfolio assistant">
+              <section class="assistant-panel" id="assistantPanel" role="dialog" aria-labelledby="assistantTitle" aria-modal="false" hidden>
+                <header class="assistant-header">
+                  <span class="assistant-avatar" aria-hidden="true">✦</span>
+                  <div>
+                    <h2 id="assistantTitle">Ask about me</h2>
+                    <p>Nancy’s portfolio assistant</p>
+                  </div>
+                  <button class="assistant-close" type="button" aria-label="Close chat">×</button>
+                </header>
+                <div class="assistant-messages" id="assistantMessages" role="log" aria-live="polite" aria-relevant="additions">
+                  <p class="assistant-message assistant-reply">Hi! Ask me about Nancy’s experience, skills, or projects.</p>
+                  <div class="assistant-suggestions" aria-label="Suggested questions">
+                    <button type="button">Experience</button>
+                    <button type="button">Projects</button>
+                    <button type="button">Skills</button>
+                  </div>
+                </div>
+                <form class="assistant-form" id="assistantForm">
+                  <label class="visually-hidden" for="assistantInput">Ask a question about Nancy</label>
+                  <input id="assistantInput" name="question" type="text" placeholder="Ask about Nancy…" autocomplete="off" />
+                  <button type="submit" aria-label="Send question">↑</button>
+                </form>
+              </section>
+              <button class="assistant-launcher" type="button" aria-expanded="false" aria-controls="assistantPanel" aria-label="Open Ask about me chat">
+                <span class="assistant-launcher-icon" aria-hidden="true">✦</span>
+                <span>Ask about me</span>
+              </button>
+            </aside>
+          </div>
+        </section>
+
+        <section id="about" class="section about">
+          <div class="about-intro">
+            <div class="about-copy">
+              <p class="eyebrow">About me</p>
+              <h2>Hello again, I’m Nancy Rana.</h2>
+              <p>I’m a full-stack .NET developer with 4+ years of experience building and supporting enterprise web applications.</p>
+              <p>I work across C#, ASP.NET Core, REST APIs, SQL Server, and Angular. I care about reliable integrations, well-structured data, and clean, maintainable code.</p>
+              <p class="about-signature">Nancy Rana</p>
+            </div>
+
+            <figure class="about-portrait">
+              <img src="assets/NancyRanaHeadshot.png" alt="Nancy Rana wearing glasses and a black blazer" />
+            </figure>
+
+            <aside class="about-stack-visual" aria-label="A snapshot of Nancy's technology stack">
+              <div class="stack-visual-header">
+                <span>APPLICATION STACK</span>
+                <span>FULL-STACK / .NET</span>
+              </div>
+              <div class="stack-layers">
+                <div class="stack-layer stack-layer-frontend">
+                  <span class="stack-layer-index">01</span>
+                  <div><small>FRONTEND</small><strong>Angular · JavaScript · jQuery · HTML/CSS</strong></div>
+                  <span class="stack-layer-mark" aria-hidden="true">↗</span>
+                </div>
+                <div class="stack-layer stack-layer-api">
+                  <span class="stack-layer-index">02</span>
+                  <div><small>BACKEND &amp; APIs</small><strong>C# · ASP.NET Core · ASP.NET MVC · REST APIs</strong></div>
+                  <span class="stack-layer-mark" aria-hidden="true">↗</span>
+                </div>
+                <div class="stack-layer stack-layer-data">
+                  <span class="stack-layer-index">03</span>
+                  <div><small>DATA</small><strong>SQL Server · ADO.NET · Stored Procedures</strong></div>
+                  <span class="stack-layer-mark" aria-hidden="true">↗</span>
+                </div>
+                <div class="stack-layer stack-layer-cloud">
+                  <span class="stack-layer-index">04</span>
+                  <div><small>TOOLS &amp; DELIVERY</small><strong>Azure · GitHub · Swagger · Postman · Docker</strong></div>
+                  <span class="stack-layer-mark" aria-hidden="true">↗</span>
+                </div>
+                <div class="stack-layer stack-layer-practice">
+                  <span class="stack-layer-index">05</span>
+                  <div><small>ENGINEERING PRACTICES</small><strong>Clean Architecture · SOLID · Design Patterns · Dependency Injection</strong></div>
+                  <span class="stack-layer-mark" aria-hidden="true">↗</span>
+                </div>
+              </div>
+              <p class="stack-visual-footer">DESIGN · BUILD · INTEGRATE</p>
+            </aside>
+          </div>
+
+          <div class="about-playbook">
+            <div class="playbook-heading">
+              <p class="eyebrow">My approach</p>
+              <h2>How I work</h2>
+              <p>I take enterprise features from understanding the workflow through implementation, integration, and ongoing refinement.</p>
+            </div>
+            <div class="playbook-grid">
+              <article class="playbook-step">
+                <span>01</span>
+                <h3>Understand the workflow</h3>
+                <p>Clarify the requirements, users, and data before choosing an implementation. Start with the problem and the outcome it needs to support.</p>
+              </article>
+              <article class="playbook-step">
+                <span>02</span>
+                <h3>Build reliable foundations</h3>
+                <p>Shape maintainable APIs, validation, authentication, and database boundaries with clean architecture and practical design patterns.</p>
+              </article>
+              <article class="playbook-step">
+                <span>03</span>
+                <h3>Refine and deliver</h3>
+                <p>Test integrations, improve SQL performance, and iterate with the team through Agile delivery until the feature works end to end.</p>
+              </article>
+            </div>
+          </div>
+
+          <div class="about-skill-section">
+            <div class="section-heading">
+              <p class="eyebrow">Toolkit</p>
+              <h2>Technologies I work with</h2>
+            </div>
+            <div class="skill-groups" aria-label="Skills list">
+              <div class="skill-group">
+                <h3>Programming</h3>
+                <div class="skill-stack">
+                  <span>C#</span>
+                  <span>SQL</span>
+                  <span>LINQ</span>
+                  <span>Async/Await</span>
+                </div>
+              </div>
+
+              <div class="skill-group">
+                <h3>Backend</h3>
+                <div class="skill-stack">
+                  <span>ASP.NET Core</span>
+                  <span>ASP.NET</span>
+                  <span>ASP.NET MVC</span>
+                  <span>Web Forms</span>
+                  <span>Windows Forms</span>
+                  <span>Entity Framework</span>
+                </div>
+              </div>
+
+              <div class="skill-group">
+                <h3>API Development</h3>
+                <div class="skill-stack">
+                  <span>REST APIs</span>
+                  <span>HTTP/HTTPS</span>
+                  <span>Authentication</span>
+                  <span>Authorization</span>
+                  <span>API Integration</span>
+                </div>
+              </div>
+
+              <div class="skill-group">
+                <h3>Database</h3>
+                <div class="skill-stack">
+                  <span>MS SQL Server</span>
+                  <span>ADO.NET</span>
+                  <span>Stored Procedures</span>
+                  <span>SQL Queries</span>
+                  <span>Joins</span>
+                  <span>Transactions</span>
+                  <span>DB First</span>
+                  <span>Code First</span>
+                </div>
+              </div>
+
+              <div class="skill-group">
+                <h3>Frontend</h3>
+                <div class="skill-stack">
+                  <span>Angular 21</span>
+                  <span>AngularJS</span>
+                  <span>JavaScript</span>
+                  <span>jQuery</span>
+                  <span>HTML5</span>
+                  <span>CSS</span>
+                  <span>Bootstrap</span>
+                </div>
+              </div>
+
+              <div class="skill-group">
+                <h3>Cloud</h3>
+                <div class="skill-stack">
+                  <span>Microsoft Azure</span>
+                </div>
+              </div>
+
+              <div class="skill-group">
+                <h3>Architecture & Design</h3>
+                <div class="skill-stack">
+                  <span>OOP</span>
+                  <span>Clean Architecture</span>
+                  <span>N-Layer Architecture</span>
+                  <span>Monolithic Architecture</span>
+                  <span>SOLID Principles</span>
+                  <span>Design Patterns</span>
+                  <span>Repository Pattern</span>
+                  <span>Dependency Injection</span>
+                </div>
+              </div>
+
+              <div class="skill-group">
+                <h3>Version Control & Tools</h3>
+                <div class="skill-stack">
+                  <span>Visual Studio</span>
+                  <span>VS Code</span>
+                  <span>Postman</span>
+                  <span>OpenAPI</span>
+                  <span>Swagger</span>
+                  <span>Git</span>
+                  <span>GitHub</span>
+                  <span>FileZilla</span>
+                  <span>SVN</span>
+                </div>
+              </div>
+
+              <div class="skill-group">
+                <h3>AI-Assisted Development</h3>
+                <div class="skill-stack">
+                  <span>GitHub Copilot</span>
+                  <span>OpenAI Codex</span>
+                  <span>Claude</span>
+                  <span>Lovable</span>
+                </div>
+              </div>
+
+              <div class="skill-group">
+                <h3>Containerization</h3>
+                <div class="skill-stack">
+                  <span>Docker</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="resume" class="section experience">
+          <div class="section-heading">
+            <p class="eyebrow">Résumé</p>
+            <h2>Software Developer</h2>
+            <a class="resume-download" href="assets/NancyRana.pdf" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3h7v7m0-7-9 9M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7"/></svg>
+              <span>View résumé (PDF)</span>
+            </a>
+          </div>
+
+          <div class="resume-summary">
+            <p class="eyebrow">Career Summary</p>
+            <p>.NET Developer with 4+ years of experience developing and maintaining enterprise applications using C#, .NET, ASP.NET Core, ASP.NET Web API, SQL Server, and ADO.NET. Experienced in RESTful API development, database optimization, authentication and authorization, OOP, SOLID principles, clean architecture, design patterns, and dependency injection. Hands-on experience with Angular, JavaScript, Microsoft Azure, Git, Swagger, and Postman in Agile/Scrum teams.</p>
+            <div class="resume-contact">
+              <a href="tel:+919992892764">+91 99928 92764</a>
+              <a href="mailto:nancyrana699@gmail.com">nancyrana699@gmail.com</a>
+              <span>Mohali, India</span>
+              <a href="https://linkedin.com/in/nancyrana699" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            </div>
+          </div>
+
+          <div class="resume-skills">
+            <div class="section-heading">
+              <p class="eyebrow">Technical Skills</p>
+              <h2>Tools and technologies</h2>
+            </div>
+            <div class="skill-groups">
+              <div class="skill-group">
+                <h3>Programming &amp; Backend</h3>
+                <div class="skill-stack"><span>C#</span><span>SQL</span><span>LINQ</span><span>Async/Await</span><span>ASP.NET Core</span><span>ASP.NET MVC</span><span>Web Forms</span><span>Windows Forms</span><span>Entity Framework</span></div>
+              </div>
+              <div class="skill-group">
+                <h3>API &amp; Database</h3>
+                <div class="skill-stack"><span>RESTful APIs</span><span>Authentication</span><span>Authorization</span><span>API Integration</span><span>SQL Server</span><span>ADO.NET</span><span>Stored Procedures</span><span>Joins &amp; Transactions</span><span>DB First &amp; Code First</span></div>
+              </div>
+              <div class="skill-group">
+                <h3>Frontend &amp; Cloud</h3>
+                <div class="skill-stack"><span>Angular 21</span><span>AngularJS</span><span>JavaScript</span><span>jQuery</span><span>HTML5</span><span>CSS</span><span>Bootstrap</span><span>Microsoft Azure</span></div>
+              </div>
+              <div class="skill-group">
+                <h3>Architecture &amp; Tools</h3>
+                <div class="skill-stack"><span>OOP &amp; SOLID</span><span>Clean Architecture</span><span>N-Layer</span><span>Design Patterns</span><span>Dependency Injection</span><span>Visual Studio</span><span>Postman</span><span>OpenAPI &amp; Swagger</span><span>Git &amp; GitHub</span><span>SVN</span></div>
+              </div>
+              <div class="skill-group">
+                <h3>AI &amp; Containers</h3>
+                <div class="skill-stack"><span>GitHub Copilot</span><span>OpenAI Codex</span><span>Claude</span><span>Lovable</span><span>Docker</span></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline">
+            <article class="timeline-item">
+              <div class="timeline-date">Jul 2023 – Sep 2026</div>
+              <div class="timeline-content">
+                <h3>Associate Software Developer</h3>
+                <p class="company">Simson Softwares | Sector 82, Mohali</p>
+                <p>
+                  Led development of an enterprise resource management system and built responsive frontend solutions using .NET Core API, ASP.NET, C#, and SQL Server. Delivered unified customer views across insurance products for clients such as Mahindra, Prudent, TATA, HDFC, and Toyota.
+                </p>
+                <ul>
+                  <li>Built responsive front-end using ASP.NET, AngularJS, MVC, C#, integrated with .NET Core APIs.</li>
+                  <li>Optimized SQL Server databases for large-scale insurance data handling.</li>
+                  <li>Delivered features ensuring a unified customer view across insurance products.</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="timeline-item">
+              <div class="timeline-date">Jul 2022 – Jun 2023</div>
+              <div class="timeline-content">
+                <h3>Jr. Software Developer</h3>
+                <p class="company">Offbeat Software Solution | Sector 74, Mohali</p>
+                <p>
+                  Provided technical support to clients for web-based applications, implemented client-side validations using jQuery and ASP.NET, and maintained responsive interfaces using HTML, Bootstrap, CSS, and scripting languages.
+                </p>
+              </div>
+            </article>
+
+            <article class="timeline-item">
+              <div class="timeline-date">Jan 2021 – Jun 2022</div>
+              <div class="timeline-content">
+                <h3>Intern</h3>
+                <p class="company">CS Infotech | Sector 22D, Chandigarh</p>
+                <p>
+                  Developed a book shopping website with user accounts, book listings, product details, and buying/selling workflows. Gained practical experience in .NET development, API basics, and debugging during a structured internship.
+                </p>
+              </div>
+            </article>
+          </div>
+
+          <div class="resume-education">
+            <div class="section-heading">
+              <p class="eyebrow">Education</p>
+              <h2>Academic background</h2>
+            </div>
+            <div class="timeline">
+              <article class="timeline-item">
+                <div class="timeline-date">2023 – 2025</div>
+                <div class="timeline-content">
+                  <h3>Master’s Degree, Computer Application</h3>
+                  <p class="company">Chandigarh University</p>
+                </div>
+              </article>
+              <article class="timeline-item">
+                <div class="timeline-date">2018 – 2021</div>
+                <div class="timeline-content">
+                  <h3>Bachelor’s Degree, Computer Science</h3>
+                  <p class="company">Guru Nanak Khalsa College</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section id="projects" class="section projects">
+          <div class="project-tabs">
+            <h2 class="project-tab is-active">Selected Works</h2>
+          </div>
+
+          <div class="project-grid">
+            <article class="project-card project-one">
+              <div class="project-media" aria-hidden="true">
+                <div class="preview-window">
+                  <div class="preview-chrome"><i></i><i></i><i></i></div>
+                  <div class="preview-workspace">
+                    <div class="preview-rail"><i></i><i></i><i></i><i></i></div>
+                    <div class="preview-page">
+                      <span class="preview-heading"></span>
+                      <div class="preview-metrics"><i></i><i></i><i></i></div>
+                      <div class="preview-lower">
+                        <div class="preview-chart"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+                        <div class="preview-rows"><i></i><i></i><i></i><i></i></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="project-body">
+                <h3>Simson Softwares</h3>
+                <div class="project-meta">
+                  <span>Jul 2023 – Sep 2026</span>
+                  <span>Associate Software Developer</span>
+                  <span>Sector 82, Mohali</span>
+                </div>
+                <p class="project-employer-summary">Enterprise resource management and insurance workflows for clients including Mahindra, Prudent, TATA, HDFC, and Toyota.</p>
+                <ul class="project-highlights">
+                  <li>Led development of an enterprise resource management system.</li>
+                  <li>Built responsive ASP.NET and AngularJS interfaces with .NET Core APIs.</li>
+                  <li>Optimized SQL Server workflows and unified insurance customer views.</li>
+                </ul>
+                <details class="project-details">
+                  <summary><span>Read more</span><span aria-hidden="true">↗</span></summary>
+                  <div class="project-details-content">
+                    <h4>Projects I worked on</h4>
+                    <ul class="project-detail-list">
+                      <li><strong>SAIBAOnline</strong><span>ERP portal for direct insurance brokers, with unified customer views across insurance products.</span></li>
+                      <li><strong>NLEMS Portal</strong><span>Customer account, outstanding-balance, accounting, and personalized reporting workflows.</span></li>
+                      <li><strong>Cattle API</strong><span>.NET REST APIs for cattle insurance policies, secure SQL data, and transaction validation.</span></li>
+                      <li><strong>Client-Specific SAIBA API Integration</strong><span>Secure custom endpoints and SQL-backed logic for client integrations.</span></li>
+                      <li><strong>SWAP</strong><span>Integration of POS, relationship manager, and policy data for online insurance management.</span></li>
+                    </ul>
+                  </div>
+                </details>
+              </div>
+            </article>
+
+            <article class="project-card project-two">
+              <div class="project-media" aria-hidden="true">
+                <div class="preview-window preview-storefront">
+                  <div class="preview-chrome"><i></i><i></i><i></i></div>
+                  <div class="storefront-screen">
+                    <div class="storefront-header"><strong>everyday</strong><span>SHOP</span><span>COLLECTIONS</span><span>ABOUT</span><b>Bag (0)</b></div>
+                    <div class="storefront-hero">
+                      <div class="storefront-copy"><small>THE NEW EDIT</small><strong>Find your next favorite.</strong><span>Thoughtful finds for everyday life.</span><b>EXPLORE THE SHOP ↗</b></div>
+                      <div class="storefront-art"><i></i><i></i><i></i></div>
+                    </div>
+                    <div class="storefront-products">
+                      <div class="store-product"><i></i><span>New arrivals</span><small>Explore the collection</small></div>
+                      <div class="store-product"><i></i><span>Everyday essentials</span><small>Shop the edit</small></div>
+                      <div class="store-product"><i></i><span>Customer favorites</span><small>See what's loved</small></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="project-body">
+                <h3>Offbeat Software Solution</h3>
+                <div class="project-meta">
+                  <span>Jul 2022 – Jun 2023</span>
+                  <span>Jr. Software Developer</span>
+                  <span>Sector 74, Mohali</span>
+                </div>
+                <p class="project-employer-summary">Supported client web applications with technical assistance, validation features, and responsive interface updates.</p>
+                <ul class="project-highlights">
+                  <li>Provided technical support for web-based client applications.</li>
+                  <li>Implemented client-side validation with jQuery and ASP.NET.</li>
+                  <li>Maintained responsive interfaces with HTML, Bootstrap, and CSS.</li>
+                </ul>
+                <details class="project-details">
+                  <summary><span>Read more</span><span aria-hidden="true">↗</span></summary>
+                  <div class="project-details-content">
+                    <h4>Project work</h4>
+                    <ul class="project-detail-list">
+                      <li><strong>Client web applications</strong><span>Technical support, client-side validation, and responsive interface maintenance for web-based applications.</span></li>
+                    </ul>
+                  </div>
+                </details>
+              </div>
+            </article>
+
+            <article class="project-card project-six">
+              <div class="project-media" aria-hidden="true">
+                <div class="preview-window preview-bookshop">
+                  <div class="preview-chrome"><i></i><i></i><i></i></div>
+                  <div class="bookshop-screen">
+                    <div class="bookshop-header"><strong>PAPER &amp; PAGE</strong><span>BOOKS</span><span>GENRES</span><span>ABOUT</span><b>Bag</b></div>
+                    <div class="bookshop-hero"><small>STORIES FOR EVERY SEASON</small><strong>Find your next great read.</strong><span>Discover books picked for you.</span><i></i></div>
+                    <div class="bookshop-shelf">
+                      <div class="book-item"><i class="book-cover cover-one"><b></b></i><span>New &amp; noteworthy</span><small>Browse books</small></div>
+                      <div class="book-item"><i class="book-cover cover-two"><b></b></i><span>Reader favorites</span><small>Explore the list</small></div>
+                      <div class="book-item"><i class="book-cover cover-three"><b></b></i><span>Discover a genre</span><small>Find your story</small></div>
+                      <div class="book-item"><i class="book-cover cover-four"><b></b></i><span>More to explore</span><small>Shop all books</small></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="project-body">
+                <h3>CS Infotech</h3>
+                <div class="project-meta">
+                  <span>Jan 2021 – Jun 2022</span>
+                  <span>Intern</span>
+                  <span>Sector 22D, Chandigarh</span>
+                </div>
+                <p class="project-employer-summary">Software development internship focused on .NET web applications and API fundamentals.</p>
+                <ul class="project-highlights">
+                  <li>Developed a book shopping website during the internship.</li>
+                  <li>Built user accounts, book listings, and product detail flows.</li>
+                  <li>Supported buying and selling across multiple book categories.</li>
+                </ul>
+                <details class="project-details">
+                  <summary><span>Read more</span><span aria-hidden="true">↗</span></summary>
+                  <div class="project-details-content">
+                    <h4>Projects I worked on</h4>
+                    <ul class="project-detail-list">
+                      <li><strong>Book Shopping Website</strong><span>Online marketplace for browsing, searching, purchasing, and selling books, with account flows, listings, and product details.</span></li>
+                    </ul>
+                  </div>
+                </details>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="section quote-panel">
+          <p>
+            “I value calm interfaces, practical systems, and meaningful details that make user experiences feel effortless.”
+          </p>
+        </section>
+
+        <section id="contact" class="section contact">
+          <div class="section-heading">
+            <p class="eyebrow">Contact</p>
+            <h2>Let’s build something meaningful.</h2>
+          </div>
+
+          <div class="contact-grid">
+            <div class="contact-card">
+              <div class="contact-method">
+                <span class="contact-method-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="m4 7 8 6 8-6" fill="none" stroke="currentColor" stroke-width="1.7"/></svg></span>
+                <div><p>Email</p><a href="mailto:nancyrana699@gmail.com?subject=Portfolio%20Inquiry&body=Hello%20Nancy%2C%0A%0AI%20would%20like%20to%20connect%20with%20you.%0A%0A" target="_self">nancyrana699@gmail.com</a></div>
+              </div>
+              <div class="contact-method">
+                <span class="contact-method-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path fill="#0a66c2" d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.78C.8 0 0 .77 0 1.73v20.54C0 23.23.8 24 1.78 24h20.44c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg></span>
+                <div><p>LinkedIn</p><a href="https://linkedin.com/in/nancyrana699" target="_blank" rel="noopener noreferrer">linkedin.com/in/nancyrana699</a></div>
+              </div>
+              <div class="contact-method">
+                <span class="contact-method-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 21s7-6.1 7-12a7 7 0 1 0-14 0c0 5.9 7 12 7 12Z" fill="none" stroke="currentColor" stroke-width="1.7"/><circle cx="12" cy="9" r="2.2" fill="none" stroke="currentColor" stroke-width="1.7"/></svg></span>
+                <div><p>Location</p><span>Mohali, India — open to opportunities across India and remote work.</span></div>
+              </div>
+              <div class="contact-method">
+                <span class="contact-method-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path fill="#25d366" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5.1-1.3A10 10 0 1 0 12 2z"/><path fill="#fff" d="M8.1 6.7c-.3-.2-.7-.2-1 0-.4.3-1.3 1.3-1.3 2.7s1.1 2.9 1.3 3.1c.2.2 2.1 3.3 5.2 4.5 2.5 1 3 .7 3.6.6.5-.1 1.7-.7 1.9-1.4.2-.7.2-1.3.1-1.4-.1-.2-.3-.2-.6-.4l-1.9-.9c-.3-.1-.5-.2-.7.2-.2.3-.7.9-.9 1.1-.2.2-.3.2-.6.1-.3-.2-1.3-.5-2.4-1.5-.9-.8-1.5-1.7-1.7-2-.2-.3 0-.5.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.8-2c-.2-.5-.4-.5-.7-.5h-.6z"/></svg></span>
+                <div><p>WhatsApp</p><a href="https://wa.me/919888810818?text=Hello%20Nancy%2C%20I%20would%20like%20to%20connect%20with%20you." target="_blank" rel="noopener noreferrer">+91 98888 10818</a></div>
+              </div>
+              <div class="contact-method">
+                <span class="contact-method-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7 3h3l2 5-2 1.5a15 15 0 0 0 4.5 4.5L16 12l5 2v3c0 1.1-.9 2-2 2C10.7 19 5 13.3 5 6c0-1.7.8-3 2-3Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg></span>
+                <div><p>Phone</p><a href="tel:+919992892764">+91 99928 92764</a></div>
+              </div>
+            </div>
+
+            <form class="contact-form" id="contactForm">
+              <input type="hidden" name="_subject" value="Portfolio Inquiry from Website" />
+              <input type="hidden" name="_captcha" value="false" />
+
+              <label>
+                Name
+                <input type="text" name="name" placeholder="Your name" required />
+              </label>
+              <label>
+                Email
+                <input type="email" name="email" placeholder="Your email" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" />
+              </label>
+              <label>
+                Project details
+                <textarea name="message" rows="4" placeholder="Tell me about your project" required></textarea>
+              </label>
+              <button type="submit" class="btn btn-primary">Send inquiry</button>
+            </form>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <footer class="site-footer">
+      <div class="footer-columns">
+        <section class="footer-column footer-status">
+          <h2>STATUS</h2>
+          <p>Available for work.</p>
+          <p>Full-stack .NET developer.</p>
+          <p>Based in Mohali, India.</p>
+        </section>
+        <section class="footer-column">
+          <h2>CONTACT</h2>
+          <nav class="footer-socials" aria-label="Contact Nancy">
+            <a href="mailto:nancyrana699@gmail.com" aria-label="Email Nancy Rana">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285f4" d="M2 6.5v11.25C2 18.44 2.56 19 3.25 19H6V9.5z"/><path fill="#34a853" d="M18 9.5V19h2.75c.69 0 1.25-.56 1.25-1.25V6.5z"/><path fill="#ea4335" d="M3.25 4h.5c.27 0 .53.09.75.25L12 9.7l7.5-5.45c.22-.16.48-.25.75-.25h.5c.69 0 1.25.56 1.25 1.25V6.5l-10 7.25L2 6.5V5.25C2 4.56 2.56 4 3.25 4z"/><path fill="#fbbc04" d="M18 9.5V19h1.5V8.4z"/></svg>
+              <span>Email</span>
+            </a>
+            <a href="https://linkedin.com/in/nancyrana699" target="_blank" rel="noopener noreferrer" aria-label="Nancy Rana on LinkedIn">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#0a66c2" d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.78C.8 0 0 .77 0 1.73v20.54C0 23.23.8 24 1.78 24h20.44c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>
+              <span>LinkedIn</span>
+            </a>
+            <a href="https://wa.me/919888810818" target="_blank" rel="noopener noreferrer" aria-label="Message Nancy on WhatsApp">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#25d366" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5.1-1.3A10 10 0 1 0 12 2z"/><path fill="#fff" d="M8.1 6.7c-.3-.2-.7-.2-1 0-.4.3-1.3 1.3-1.3 2.7s1.1 2.9 1.3 3.1c.2.2 2.1 3.3 5.2 4.5 2.5 1 3 .7 3.6.6.5-.1 1.7-.7 1.9-1.4.2-.7.2-1.3.1-1.4-.1-.2-.3-.2-.6-.4l-1.9-.9c-.3-.1-.5-.2-.7.2-.2.3-.7.9-.9 1.1-.2.2-.3.2-.6.1-.3-.2-1.3-.5-2.4-1.5-.9-.8-1.5-1.7-1.7-2-.2-.3 0-.5.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.8-2c-.2-.5-.4-.5-.7-.5h-.6z"/></svg>
+              <span>WhatsApp</span>
+            </a>
+          </nav>
+        </section>
+        <section class="footer-column footer-credits">
+          <h2>CREDITS</h2>
+          <p>Copyright © <span id="year"></span>.</p>
+          <p>Built with care in Mohali.</p>
+          <p>Thanks for visiting.</p>
+          <a class="footer-top-link" href="#home" aria-label="Back to top">↑</a>
+        </section>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
