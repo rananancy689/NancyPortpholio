@@ -2140,6 +2140,17 @@ body {
     color: #fff;
   }
 
+  .sidebar.menu-open .theme-toggle {
+    position: absolute;
+    top: 15px;
+    left: 116px;
+    z-index: 2;
+    width: 42px;
+    height: 42px;
+    background: rgba(255, 255, 255, 0.88);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
+  }
+
   .sidebar.menu-open .menu-toggle {
     position: absolute;
     top: 15px;
@@ -3780,7 +3791,8 @@ body::-webkit-scrollbar {
   .sidebar {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
+    gap: 8px;
     min-height: 72px;
     padding: 14px 14px 8px;
     border: 0;
@@ -3790,6 +3802,14 @@ body::-webkit-scrollbar {
 
   .brand-wrap {
     justify-self: start;
+  }
+
+  .theme-toggle {
+    margin-left: 0;
+  }
+
+  .menu-toggle {
+    margin-left: auto;
   }
 
   .brand-mark {
@@ -4295,25 +4315,49 @@ body::-webkit-scrollbar {
 
 .theme-toggle {
   display: grid;
-  width: 42px;
-  height: 42px;
-  flex: 0 0 42px;
+  width: clamp(2.5rem, 2vw + 1.5rem, 2.9rem);
+  height: clamp(2.5rem, 2vw + 1.5rem, 2.9rem);
+  flex: 0 0 auto;
   place-items: center;
+  padding: 0;
   border: 1px solid var(--line-strong);
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.76);
-  color: var(--text);
+  color: #1f2430;
   cursor: pointer;
-  transition: background-color 160ms ease, color 160ms ease, transform 160ms ease;
+  transition: background-color 160ms ease, color 160ms ease, transform 160ms ease, box-shadow 160ms ease;
+  box-shadow: 0 8px 18px rgba(15, 23, 42, 0.08);
 }
 
 .theme-toggle:hover {
-  transform: rotate(12deg);
+  transform: rotate(12deg) scale(1.03);
+}
+
+.theme-toggle:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
 }
 
 .theme-icon {
-  width: 19px;
-  height: 19px;
+  width: clamp(1rem, 0.8vw + 0.74rem, 1.2rem);
+  height: clamp(1rem, 0.8vw + 0.74rem, 1.2rem);
+  display: block;
+  flex: 0 0 auto;
+}
+
+@media (max-width: 640px) {
+  .theme-toggle {
+    width: clamp(2.5rem, 8vw, 3rem);
+    height: clamp(2.5rem, 8vw, 3rem);
+    min-width: 2.5rem;
+    min-height: 2.5rem;
+    box-shadow: 0 6px 14px rgba(15, 23, 42, 0.08);
+  }
+
+  .theme-icon {
+    width: 1rem;
+    height: 1rem;
+  }
 }
 
 .theme-icon-moon {

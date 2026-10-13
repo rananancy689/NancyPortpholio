@@ -1,5 +1,17 @@
 {
-  "dependencies": {
+  "name": "nancy-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "homepage": "https://rananancy689.github.io/NancyPortpholio",
+  "scripts": {
+    "predeploy": "npm run build",
+    "build": "node -e \"console.log('Static HTML portfolio: no build step required')\"",
+    "deploy": "gh-pages -d ."
+  },
+  "devDependencies": {
     "gh-pages": "^6.3.0"
+  },
+  "dependencies": {
+    "react-scripts": "^5.0.1"
   }
 }

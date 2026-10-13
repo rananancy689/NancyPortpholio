@@ -344,7 +344,7 @@ document.addEventListener("DOMContentLoaded", () => {
       }
 
       if (/contact|email|linkedin|phone|hire|available|location|remote/.test(normalizedQuestion)) {
-        return "Nancy is based in Mohali, India and is open to opportunities across India and remote roles. Email nancyrana699@gmail.com or use the contact section to get in touch.";
+        return "Nancy is based in Mohali, India and is open to opportunities across India and remote roles. Email nancyrana.in@gmail.com or use the contact section to get in touch.";
       }
 
       return "I can help with Nancy’s experience, projects, skills, or contact details. Try asking about one of those.";
@@ -456,7 +456,7 @@ document.addEventListener("DOMContentLoaded", () => {
           _captcha: "false"
         };
 
-        const response = await fetch("https://formsubmit.co/ajax/nancyrana699@gmail.com", {
+        const response = await fetch("https://formsubmit.co/ajax/nancyrana.in@gmail.com", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
