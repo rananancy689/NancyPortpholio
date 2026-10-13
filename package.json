@@ -3,9 +3,8 @@
   "version": "1.0.0",
   "private": true,
   "homepage": "https://rananancy689.github.io/NancyPortpholio",
-  "scripts": {
-    "predeploy": "npm run build",
-    "build": "node -e \"console.log('Static HTML portfolio: no build step required')\"",
+   "scripts": {
+    "build": "node -e \"console.log('Static portfolio: no build step required')\"",
     "deploy": "gh-pages -d ."
   },
   "devDependencies": {
